@@ -17,7 +17,8 @@ Enjoy a visually appealing interface with dynamic scores and interactive gamepla
 ---
 
 ## 🖼️ Screenshot
-[Game Screeshot]<img width="1004" height="768" alt="screenshot" src="https://github.com/user-attachments/assets/2357fd32-977c-42ef-8db9-9a1b5dae334e" />
+[Game Screeshot]<img width="1002" height="766" alt="screenshot" src="https://github.com/user-attachments/assets/22784b8a-c4da-4e59-8ea4-a866e07ad89c" />
+
 
 
 ---
