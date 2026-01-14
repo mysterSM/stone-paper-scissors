@@ -25,7 +25,7 @@ Enjoy a visually appealing interface with dynamic scores and interactive gamepla
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YourUsername/stone-paper-scissors.git
+   git clone https://github.com/MysterSM/stone-paper-scissors.git
    cd stone-paper-scissors
 2. Ensure you have **Python 3.10+** installed
 3.**Run the game**
