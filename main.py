@@ -49,9 +49,19 @@ def play(user):
     condition_label.config(text=f"{result}")
     user_score_label.config(text=f"{score}")
     comp_score_label.config(text=f"{comp_score}")
+def reset():
+    global score, comp_score
+    score = 0
+    comp_score = 0
+    user_score_label.config(text="0")
+    comp_score_label.config(text="0")
 stone_btn = tk.Button(root, text="Stone",font=("Arial",20,"bold"),command=lambda: play("stone"),bg="#7C7C7C",fg="#FFFFFF",activebackground="#FFFFFF",activeforeground="#7C7C7C")
 paper_btn = tk.Button(root, text="Paper",font=("Arial",20,"bold"),command= lambda: play("paper"),bg="#FFFFFF",fg="#000000",activebackground="#000000",activeforeground="#FFFFFF")
 scissor_btn = tk.Button(root, text="Scissors",font=("Arial",20,"bold"), command=lambda: play("scissors"),bg="#1E3A8A",fg="#FFD700",activebackground="#FFD700",activeforeground="#1E3A8A")
+reset_btn = tk.Button(root, text="Reset",font=("Arial", 16), command= reset ,bg="#07F707",fg="#000000" )
+quit_btn = tk.Button(root, text="QUIT", font=("Arial", 16), command= root.destroy, bg="#FF0000", fg="#FFFFFF")
+c.create_window(950, 30, window=reset_btn)
+c.create_window(50, 30, window=quit_btn)
 c.create_window(270,550,window=stone_btn)
 c.create_window(470,550,window=paper_btn)
 c.create_window(700,550,window=scissor_btn)
