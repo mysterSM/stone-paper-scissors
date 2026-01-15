@@ -33,7 +33,7 @@ Enjoy a visually appealing interface with dynamic scores and interactive gamepla
 
 ---
 
-#Future improvements
+## Future improvements
 - Adding new game modes
 - Adding sound effects
 - Making a more attractive UI
@@ -41,5 +41,7 @@ Enjoy a visually appealing interface with dynamic scores and interactive gamepla
 
 ---
 
-#Author
--Sharodik Mondal
+## Author
+- Sharodik Mondal
+
+---
