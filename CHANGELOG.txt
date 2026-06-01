@@ -1,6 +1,35 @@
 # Stone Paper Scissors - Changelog
 
-## Version 3.0 (Current)
+## Version 4.0 (Current)
+
+**Release Date:** 1 Jun 2026
+
+### Major Features:
+
+* Introduced **Quarzion AI** opponent.
+* Added **DecisionEngine v1.0**.
+* AI records and analyzes player move history.
+* Frequency-based move prediction system.
+* Counter-move generation system.
+* Weighted decision making to reduce predictability.
+* AI activation after sufficient gameplay data is collected.
+* Added game reset functionality.
+
+### Improvements:
+
+* Refactored game logic into modular components.
+* Separated AI logic from GUI/game management.
+* Improved maintainability and future expandability.
+* Significantly increased gameplay difficulty.
+
+### Notes:
+
+* Quarzion AI currently uses frequency analysis.
+* Future versions will include behavioral tracking and persistent player profiles.
+* The background image has been changed from bg.gif to bg.png
+* The icon has also been changed
+
+## Version 3.0
 **Release Date:** 14 Jan 2026
 
 ### New Features:
