@@ -1,47 +1,111 @@
-# 🎲 Stone Paper Scissors v3.0
+# 🧠 Stone Paper Scissors - Quarzion AI Edition V4.0
 
-A modern **GUI version** of the classic **Stone Paper Scissors** game built with Python and Tkinter.  
-Enjoy a visually appealing interface with dynamic scores and interactive gameplay!
+A modern Python implementation of the classic **Stone Paper Scissors** game featuring a custom-built AI opponent called **Quarzion AI**.
 
----
+Unlike traditional versions that rely entirely on random choices, Quarzion AI analyzes player behavior and attempts to predict future moves using the **DecisionEngine v1.0**.
 
-## 🌟 Features
-- **Graphical User Interface (GUI)** with Tkinter  
-- Custom **1000x1000 canvas** with background image support  
-- **Game icon** for a professional look  
-- Dynamic **scoreboard** for Player vs Computer  
-- Real-time **Win / Tie / Lose** messages  
-- Styled buttons with **custom fonts and colors**  
-- Easy to **customize** fonts, colors, and images  
+Built with **Python** and **Tkinter**.
 
 ---
 
-## 🖼️ Screenshot
+## ✨ Features
 
-<img width="1002" height="766" alt="Game Screenshot" src="https://github.com/user-attachments/assets/22784b8a-c4da-4e59-8ea4-a866e07ad89c" />
+### 🎮 Modern GUI
+
+* Built using Tkinter
+* Custom background support
+* Custom game icon
+* Dynamic result messages
+* Real-time score tracking
+* Reset button for quick restarts
+
+### 🤖 Quarzion AI
+
+* Records recent player moves
+* Analyzes move frequency
+* Predicts the player's most likely next move
+* Selects a counter move
+* Uses a weighted decision system to avoid becoming completely predictable
+
+### 📊 Score System
+
+* Player vs Quarzion AI scoreboard
+* Win, Lose and Tie detection
+* Ties award 0.5 points to both sides
+
+---
+
+## 🧠 How Quarzion AI Works
+
+The current AI uses **DecisionEngine v1.0**:
+
+1. Stores the player's recent move history.
+2. Determines the most frequently played move.
+3. Predicts the player's next move.
+4. Chooses the counter move.
+5. Occasionally plays a random move to remain less predictable.
+
+This creates a more challenging experience than a standard random opponent.
 
 ---
 
-## 🖥️ Installation
+## 📂 Project Structure
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/MysterSM/stone-paper-scissors.git
-   cd stone-paper-scissors
-2. Ensure you have **Python 3.10+** installed
-3. **Run the game**
+```text
+stone-paper-scissors/
+│
+├── main.py
+├── DecisionEngine.py
+│
+├── assets/
+│   ├── bg.png
+│   └── icon.ico
+│
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🚀 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/MysterSM/stone-paper-scissors.git
+cd stone-paper-scissors
+```
+
+### Run the game
+
+```bash
+python main.py
+```
 
 ---
 
-## Future improvements
-- Adding new game modes
-- Adding sound effects
-- Making a more attractive UI
-- Many more to come!
+## 🔮 Planned Features
+
+* Advanced Quarzion AI behavior tracking
+* Persistent player profiles
+* Improved UI and animations
+* Sound effects
+* Additional game modes
+* Difficulty settings
+* Enhanced visual effects
 
 ---
 
-## Author
-- Sharodik Mondal
+## 📜 Changelog
+
+See `CHANGELOG.md` for detailed version history.
 
 ---
+
+## 👨‍💻 Author
+
+**Sharodik Mondal**
+
+GitHub: MysterSM
