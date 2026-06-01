@@ -24,16 +24,17 @@ options = ["stone", "paper", "scissors"]
 user_score_label = tk.Label(root, text=f"{score}", font=("Bahnschrift", 32, "bold"), bg="#FFFFFF")
 comp_score_label = tk.Label(root, text=f"{comp_score}", font=("Bahnschrift", 32, "bold"), bg="#FFFFFF")
 
-totalmoves = 0
+totalrounds = 0
 
 def reset(): #reset function
-    global score, comp_score, totalmoves
+    global score, comp_score, totalrounds
     score = 0
     comp_score = 0
     user_score_label.config(text=f"{score}")
     comp_score_label.config(text=f"{comp_score}")
     DecisionEngine.history=[]
-    totalmoves = 0
+    totalrounds = 0
+    c.itemconfig(text_id, text="Let's start the game")
 
 def check_result(user_move, computer_move): #checks final result
     global score, comp_score
@@ -55,15 +56,15 @@ def check_result(user_move, computer_move): #checks final result
     comp_score_label.config(text=str(comp_score))
 
 def log_move(move): #logs user moves and sends to DecisionEngine for prediction
-    global totalmoves
-    totalmoves+=1
-    DecisionEngine.record_move(move)
-    if(totalmoves<5):
+    global totalrounds
+    totalrounds+=1
+    if(totalrounds<5):
         comp_choice = random.choice(options)
         check_result(move, comp_choice)
-    elif(totalmoves>=5):
+    elif(totalrounds>=5):
         comp_choice = DecisionEngine.boot()
         check_result(move, comp_choice)
+    DecisionEngine.record_move(move)
 
 c.create_rectangle(400, 500, 500, 430, fill="white", width=3)#User score rectangle
 c.create_rectangle(800, 500, 900, 430, fill="white", width=3)#Computer score rectangle
@@ -74,7 +75,7 @@ c.create_text(650, 50, text="STONE PAPER SCISSORS", fill="#A855F7",font=("Bernar
                justify="center")
 c.create_text(850, 525, text="Quarizon AI", fill="#5f0d58", font=("Bernard MT",30,"bold"),
                justify="center")
-text_id = c.create_text(650, 200, text="Start the game!", fill="#9E9C9C", font=("Bernard MT", 30, "bold"),
+text_id = c.create_text(650, 200, text="Let's start the game!", fill="#9E9C9C", font=("Bernard MT", 30, "bold"),
                          justify="center")
 #Buttons
 quit_btn = tk.Button(text="QUIT", font=("Bahnschrift", 18, "bold"),
