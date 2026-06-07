@@ -8,6 +8,10 @@ Built with **Python** and **Tkinter**.
 
 ---
 
+## Screenshot
+<img width="1366" height="768" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/ebe3686b-53af-4792-9330-c614805a6edf" />
+
+
 ## ✨ Features
 
 ### 🎮 Modern GUI
