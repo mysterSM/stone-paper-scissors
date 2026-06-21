@@ -34,7 +34,7 @@ def reset(): #reset function
     comp_score_label.config(text=f"{comp_score}")
     DecisionEngine.history=[]
     totalrounds = 0
-    c.itemconfig(text_id, text="Let's start the game")
+    c.itemconfig(text_id, text="Let's start the game!")
 
 def check_result(user_move, computer_move): #checks final result
     global score, comp_score
